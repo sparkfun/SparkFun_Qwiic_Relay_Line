@@ -11001,7 +11001,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "IC-..."
+		(property "PROD_ID" "IC-27579"
 			(at 87.63 100.33 0)
 			(effects
 				(font
