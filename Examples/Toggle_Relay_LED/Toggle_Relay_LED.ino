@@ -48,18 +48,13 @@ void setup()
 
 void loop()
 {
-  for (int i = 0; i < 1; i++)
-  {
-    io.digitalWrite(i, HIGH); // Turn pin HIGH
-    Serial.print("GPIO ");
-    Serial.print(i);
-    Serial.println(" is now high");
+    io.digitalWrite(0, HIGH); // Turn relay on
+    io.digitalWrite(1, LOW); // Turn LED on
+    Serial.println("Relay on");
     delay(2500);
 
-    io.digitalWrite(i, LOW); // Turn pin LOW
-    Serial.print("GPIO ");
-    Serial.print(i);
-    Serial.println(" is now low");
+    io.digitalWrite(0, LOW); // Turn relay off
+    io.digitalWrite(1, HIGH); // Turn LED off
+    Serial.println("Relay off");
     delay(2500);
-  }
 }
