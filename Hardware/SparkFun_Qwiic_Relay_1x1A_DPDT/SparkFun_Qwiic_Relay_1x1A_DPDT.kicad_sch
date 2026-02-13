@@ -7,7 +7,7 @@
 	(title_block
 		(title "SparkFun Qwiic Relay 1x1A DPDT")
 		(date "2025-12-08")
-		(rev "v10")
+		(rev "v11")
 		(comment 1 "Designed by: N. Seidle")
 	)
 	(lib_symbols
@@ -3392,6 +3392,22 @@
 				)
 			)
 			(symbol "Relay_DPDT_1A_3V_10.0x6.5mm_SMD_1_1"
+				(text "-"
+					(at -3.81 11.43 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "+"
+					(at 3.81 11.43 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 				(pin passive line
 					(at -7.62 10.16 0)
 					(length 2.54)
@@ -3402,7 +3418,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3456,7 +3472,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6598,16 +6614,6 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(text "TCA9555RTWR(UMW) - QFN-24 (4x4) drop in for TCA. Cheapest. UMW brand.\nPI4IOE5V9535ZDEX - QFN-24 (4x4) drop in for TCA. Diode brand.\nTCA9555RTWR - WQFN-24 (4x4) 0x20 as default adr. TI watermark.\nXL9555QF24 - QFN-24 (4x4) drop in for TCA. \nAW9523BTQR - TQFN-24 (4x4) Very good but has RST, for A1. 0x51 as default.\nXL9535QF24 - QFN-24 (4x4)\n\nPCA9536DGKR - VSSOP-8\nTCA9537DGSR - MSOP-10\n"
-		(exclude_from_sim no)
-		(at 309.88 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1f950d32-ed6c-41e5-87fc-6c8c0477d9fb")
 	)
 	(text "Internal Default 100k Pullup Resistors on all GPIO"
 		(exclude_from_sim no)
