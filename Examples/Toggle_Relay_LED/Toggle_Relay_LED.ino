@@ -7,6 +7,7 @@
   License: This code is public domain, please do whatever you want!
 
   Feel like supporting our work? Buy a board from SparkFun!
+  https://www.sparkfun.com/products/30416 - Qwiic 1x1A DPDT Relay
   https://www.sparkfun.com/products/17047 - Qwiic GPIO
   https://www.sparkfun.com/products/26784 - Qwiic Power Switch
   https://www.sparkfun.com/products/26851 - Qwiic Directional Pad
