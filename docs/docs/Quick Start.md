@@ -1,13 +1,20 @@
-In this Quick Start guide we'll go over how to assemble a single AC load to the Qwiic Relay 1X1A - DPDT and connect it to a SparkFun RedBoard IoT - ESP32 to control the relay and load using the SparkFun I<sup>2</sup>C Expander Arduino Library.
 
-# Qwiic Assembly
+# Quick Start Guide
+
+In this Quick Start guide we'll go over how to assemble a single AC load to the Qwiic Relay 1X1A - DPDT and connect it to a SparkFun RedBoard IoT - ESP32 to control the relay and load using the SparkFun I<sup>2</sup>C Expander Arduino Library. 
+
+This Quick Start guide assumes users have an understanding of how to safely wire an AC load to a relay, how to use Qwiic breakouts with Arduino development boards and how to use the Arduino IDE. If you're not familiar with these concepts we recommend reading through the rest of the guide before proceeding to assemble the Qwiic Relay.
+
+## Qwiic Assembly
+
+We'll start by connecting the Qwiic Relay 1X1A - DPDT to the RedBoard IoT - ESP32 using a Qwiic cable. Simply plug one end into one of the Qwiic Relay's Qwiic connectors and the other into the RedBoard IoT's Qwiic connector like the photo below:
 
 <figure markdown>
-[![Completed Qwiic assembly to the RedBoard IoT - ESP32](/docs/static/img/Qwiic-Relay-1x1A-dpdt-Qwiic-assembly.jpg){ width="600"}](/docs/static/img/Qwiic-Relay-1x1A-dpdt-Qwiic-assembly.jpg "Click to enlarge")
+[![Completed Qwiic assembly to the RedBoard IoT - ESP32](/img/Qwiic-Relay-1x1A-dpdt-Qwiic-assembly.jpg)](/img/Qwiic-Relay-1x1A-dpdt-Qwiic-assembly.jpg "Click to enlarge")
 <figcaption>Qwiic Relay 1x1A - DPDT connected to the RedBoard IoT - ESP32 over Qwiic.</figcaption>
 </figure>
 
-# Relay Load Assembly
+## Relay Load Assembly
 
 :::warning
 
@@ -24,7 +31,7 @@ With the Qwiic Relay 1x1A connected to the RedBoard, let's prepare the wiring fo
     * If the device will normally be **off** and switched **on**, connect this end to `NO`.
 
 <figure markdown>
-[![Close up photo of the AC load wires connected to the Qwiic Relay screw terminals](/docs/static/img/Qwiic-Relay-1x1A-dpdt-load-closeup.jpg){ width="600"}](/docs/static/img/Qwiic-Relay-1x1A-dpdt-load-closeup.jpg "Click to enlarge")
+[![Close up photo of the AC load wires connected to the Qwiic Relay screw terminals](/img/Qwiic-Relay-1x1A-dpdt-load-closeup.jpg)](/img/Qwiic-Relay-1x1A-dpdt-load-closeup.jpg "Click to enlarge")
 <figcaption>AC Load connected to Qwiic Relay 1x1A - DPDT screw terminals.</figcaption>
 </figure>
 
@@ -33,18 +40,18 @@ With the Qwiic Relay 1x1A connected to the RedBoard, let's prepare the wiring fo
 
  Warning! Make sure that your wires connecting to the wall outlet are secure and are rated to handle the current! Please be careful when handling the contacts when the cable is plugged into a wall outlet. Touching the contacts while powered could result in injury.
 
- Looking for information about safety and insulation? Check out the notes about Safety and Insulation from our Beefcake Relay Control Kit. 
+ Looking for information about safety and insulation? Check out the notes about [Safety and Insulation](https://learn.sparkfun.com/tutorials/beefcake-relay-control-hookup-guide#safety-and-insulation) from our Beefcake Relay Control Kit. 
 
 :::
 
 With everything connected up, your circuit should look similar to the photo below. Now let's upload some code to turn the load on and off.
 
 <figure markdown>
-[![Completed assembly photo](/docs/static/img/Qwiic-Relay-1x1A-dpdt-complete-assembly.jpg){ width="600"}](/docs/static/img/Qwiic-Relay-1x1A-dpdt-load-closeup.jpg "Click to enlarge")
+[![Completed assembly photo](/img/Qwiic-Relay-1x1A-dpdt-complete-assembly.jpg)](/img/Qwiic-Relay-1x1A-dpdt-load-closeup.jpg "Click to enlarge")
 <figcaption>Completed Qwiic Relay 1x1A - DPDT assembly.</figcaption>
 </figure>
 
-# Toggle Relay LED Arduino Example
+## Toggle Relay LED Arduino Example
 
 This example toggles the relay and both green status LEDs on and off every second. This example uses the [SparkFun I2C Expander Arduino Library](https://github.com/sparkfun/SparkFun_I2C_Expander_Arduino_Library) and can be found in the [Examples folder](https://github.com/sparkfun/SparkFun_Qwiic_Relay_Line/tree/main/Examples) of the Qwiic Relay Line GitHub repository. Follow the steps below to upload the code.
 

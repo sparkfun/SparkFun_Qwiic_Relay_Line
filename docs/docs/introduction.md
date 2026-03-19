@@ -1,6 +1,11 @@
 ---
 slug: /
 ---
+
+<figure>
+![Qwiic Relay Line Banner Image](/img/Qwiic-relay-line-HG-banner.png)
+</figure>
+
 # Introduction
 
 The SparkFun Qwiic Relay - 1X1A DPDT lets you control high power devices from a microcontroller over I<sup>2</sup>C. This relay breakout uses the G6K-2F-Y DC3 dual-pole/dual-throw relay from Omron Electronic Components capable of switching loads of 1A/30VDC and 0.3A/125VAC (at 40&deg;C) with very low drive currents to switch the relay. 

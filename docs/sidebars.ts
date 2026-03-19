@@ -34,8 +34,8 @@ import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
     tutorialSidebar: [
-        'introduction',
-        'quick_start',
+        'Introduction',
+        'Quick Start',
         {
             type: 'category',
             label: 'Hardware',
@@ -49,7 +49,7 @@ const sidebars: SidebarsConfig = {
             ]
         },
         {
-            type: 'catergory',
+            type: 'category',
             label: 'Software',
             link: {
                 type: 'generated-index'
@@ -60,7 +60,7 @@ const sidebars: SidebarsConfig = {
                 'software/arduino_example',
             ]
         },
-        'resources',
+        'Resources',
         {
             type: 'category',
             label: 'Support',

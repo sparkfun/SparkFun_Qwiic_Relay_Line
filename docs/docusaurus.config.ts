@@ -6,13 +6,11 @@ import type * as Preset from '@docusaurus/preset-classic';
 const appKey = process.env.ALGOLIA_APP_KEY;
 const appID = process.env.ALGOLIA_APPID;
 const indexName = process.env.ALGOLIA_INDEX_NAME;
-const assistantId = process.env.ALGOLIA_ASK_AI_ASSISTANT_ID;
-const assistantIndexName = process.env.ALGOLIA_ASK_AI_INDEX_NAME;
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-    title: 'QwiicRelay1X1ADPDT Documentation',
+    title: 'Qwiic Relay Line Documentation',
     tagline: 'Control high-power devices over I2C with the Qwiic Relay Line',
     favicon: 'img/favicon.ico',
 
@@ -73,7 +71,7 @@ const config: Config = {
         colorMode: {
             respectPrefersColorScheme: true,
         },
-        // ...
+        ...
 
         docsearch: {
             // The application ID provided by Algolia
@@ -92,9 +90,9 @@ const config: Config = {
             // NOTE: If using the overall doc index, set  this facet filter up
             //------------------------------------------------------------------
             // // only search in the SparkFun Qwiic Relay Line documentation - restrict on the section facet
-            // searchParameters: {
-            //     facetFilters: ['section:SparkFun_Qwiic_Relay_Line'],
-            // },
+            searchParameters: {
+                facetFilters: ['section:SparkFun_Qwiic_Relay_Line'],
+            },
 
             // note - using a "markdown" index that is separate from the main documentation index.
             // this is recommended by docsearch
@@ -114,14 +112,14 @@ const config: Config = {
             // disable for now. Wait to see if this evolves, or we feel we need to support
             // ai at this level - then make a new index.
             // using it's own idex March 2026 -
-            askAi: {
-                indexName: assistantIndexName,
-                assistantId: assistantId,
-                apiKey: appKey,
-                appId: appID,
-                sidePanel: true,
+            // askAi: {
+            //     indexName: assistantIndexName,
+            //     assistantId: assistantId,
+            //     apiKey: appKey,
+            //     appId: appID,
+            //     sidePanel: true,
 
-            },
+            // },
 
         },
 
