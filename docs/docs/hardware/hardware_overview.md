@@ -19,7 +19,7 @@ This relay board includes two connection types for the relay's two poles. The ma
 
 ## TCA9555 I<sup>2</sup>C GPIO Expander
 
-The Qwiic Relay uses a TCA9555 I<sup>2</sup>C GPIO Expander to control the relay over I<sup>2</sup>C. The TCA9555 is a 16-bit I/O expander that is configured in the Arduino example to have two of its pins act as outputs to control the relay's signal line and the green status LED. This allows the drive current for the relay to just be up to 5.8mA. The board sets the TCA9555's I<sup>2</sup>C address to **0x20** by default. Users can set the GPIO Expander to the alternate address, **0x21**, by closing the ADR jumper. For a complete overview of the TCA9555, refer to the [datasheet](/docs/static/ref/)
+The Qwiic Relay uses a TCA9555 I<sup>2</sup>C GPIO Expander to control the relay over I<sup>2</sup>C. The TCA9555 is a 16-bit I/O expander that is configured in the Arduino example to have two of its pins act as outputs to control the relay's signal line and the green status LED. This allows the drive current for the relay to just be up to 5.8mA. The board sets the TCA9555's I<sup>2</sup>C address to **0x20** by default. Users can set the GPIO Expander to the alternate address, **0x21**, by closing the ADR jumper. For a complete overview of the TCA9555, refer to the [datasheet](/ref/tca9555.pdf)
 
 ## Connectors
 
