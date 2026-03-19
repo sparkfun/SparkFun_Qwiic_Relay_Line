@@ -71,7 +71,6 @@ const config: Config = {
         colorMode: {
             respectPrefersColorScheme: true,
         },
-        ...
 
         docsearch: {
             // The application ID provided by Algolia
